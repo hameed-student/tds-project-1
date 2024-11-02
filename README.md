@@ -17,13 +17,13 @@ This project uses the GitHub API to gather information on GitHub users located i
 
 ### Data Collection and Cleaning Process
 
-1. **User Collection**: The script pulls user data through the GitHub API's search endpoint, filtering for users in Berlin with over 200 followers.
+1. **User Collection**: The scrapper.py script pulls user data through the GitHub API's search endpoint, filtering for users in Berlin with over 200 followers.
 2. **Data Cleaning**: Company names are cleaned by removing any leading `@` symbol, trimming whitespace, and converting the names to uppercase.
 3. **Repository Collection**: For each user in `users.csv`, the script fetches up to 500 of their most recently pushed public repositories, preserving key attributes like `stargazers_count`, `language`, and `license_name`.
 4. **File Output**: The data is saved in CSV format, following the format requirements specified.
 
 ### Analysis Methodology
-
+<a href="https://drive.google.com/file/d/1iANzUf8ry1s6vpCwOHKfrGpe5xEnHqlB/view?usp=sharing"> click here for colab file</a>
 1. **Data Aggregation**: Analyzed user data for patterns in job affiliations and compared company profiles to follower counts.
 2. **Repository Metrics**: Assessed repository languages, license types, and features (projects and wikis) for patterns related to engagement (stargazers and watchers).
 

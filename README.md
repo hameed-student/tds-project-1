@@ -17,6 +17,8 @@ This project uses the GitHub API to gather information on GitHub users located i
 
 ### Data Collection and Cleaning Process
 
+**scrapper.py is included in repository**
+
 1. **User Collection**: The scrapper.py script pulls user data through the GitHub API's search endpoint, filtering for users in Berlin with over 200 followers.
 2. **Data Cleaning**: Company names are cleaned by removing any leading `@` symbol, trimming whitespace, and converting the names to uppercase.
 3. **Repository Collection**: For each user in `users.csv`, the script fetches up to 500 of their most recently pushed public repositories, preserving key attributes like `stargazers_count`, `language`, and `license_name`.
